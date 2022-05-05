@@ -8,11 +8,4 @@
         app:showAsAction="ifRoom|collapseActionView"
         app:actionViewClass="androidx.appcompat.widget.SearchView" />
 
-    <item
-        android:orderInCategory="1"
-        android:id="@+id/idRefresh"
-        android:title="retry"
-        android:icon="@drawable/ic_refresh"
-        app:showAsAction="ifRoom" />
-
 </menu>
