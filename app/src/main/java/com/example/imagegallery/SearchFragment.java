@@ -89,7 +89,7 @@ public class SearchFragment extends Fragment {
             @Override
             public void onFailure(Call<ImageList> call, Throwable t) {
                 Snackbar snackbar = Snackbar
-                        .make(null,"Something went wrong",Snackbar.LENGTH_LONG)
+                        .make(recyclerView,"Something went wrong",Snackbar.LENGTH_LONG)
                         .setAction("RETRY", v -> {
                             Toast.makeText(getContext(), "retrying....", Toast.LENGTH_SHORT).show();
 
@@ -123,7 +123,7 @@ public class SearchFragment extends Fragment {
             @Override
             public void onFailure(Call<ImageList> call, Throwable t) {
                 Snackbar snackbar = Snackbar
-                        .make(null,"Something went wrong",Snackbar.LENGTH_LONG)
+                        .make(recyclerView,"Something went wrong",Snackbar.LENGTH_LONG)
                         .setAction("RETRY", v -> {
                             Toast.makeText(getContext(), "retrying....", Toast.LENGTH_SHORT).show();
                             getImagesByQuery(query);
